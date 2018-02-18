@@ -12,22 +12,31 @@ import SettingsScreen from './screens/Settings';
 
 export default class App extends React.Component {
     render() {
-        const Navigator = TabNavigator({
-            Welcome : { screen: WelcomeScreen },
-            Auth    : { screen: AuthScreen },
-            Main    : {
-                screen : TabNavigator({
-                    Map: { screen: MapScreen },
-                    Deck: { screen: DeckScreen },
-                    Review : {
-                        screen: StackNavigator({
-                            Review: { screen: ReviewScreen },
-                            Settings: { screen: SettingsScreen } 
-                        })
-                    }
-                })
+        const Navigator = TabNavigator
+        (
+            {
+                Welcome : { screen: WelcomeScreen },
+                Auth    : { screen: AuthScreen },
+                Main    : {
+                    screen : TabNavigator({
+                        Map: { screen: MapScreen },
+                        Deck: { screen: DeckScreen },
+                        Review : {
+                            screen: StackNavigator({
+                                Review: { screen: ReviewScreen },
+                                Settings: { screen: SettingsScreen }
+                            })
+                        }
+                    })
+                }
+            },
+            {
+                navigationOptions: {
+                    tabBarVisible: false,
+                },
+                lazy: true
             }
-        });
+        );
 
         return (
             <Provider store={store}>

@@ -1,8 +1,8 @@
 {
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 5765,
-  "expoServerNgrokUrl": "https://kp-auk.alexmk92.job-app.exp.direct",
-  "packagerNgrokUrl": "https://packager.kp-auk.alexmk92.job-app.exp.direct",
-  "ngrokPid": 5780
+  "packagerPid": 8332,
+  "expoServerNgrokUrl": "https://kp-auk.alexmk92.jobapp.exp.direct",
+  "packagerNgrokUrl": "https://packager.kp-auk.alexmk92.jobapp.exp.direct",
+  "ngrokPid": 8476
 }
