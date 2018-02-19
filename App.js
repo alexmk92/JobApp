@@ -12,8 +12,7 @@ import SettingsScreen from './screens/Settings';
 
 export default class App extends React.Component {
     render() {
-        const Navigator = TabNavigator
-        (
+        const Navigator = TabNavigator(
             {
                 Welcome : { screen: WelcomeScreen },
                 Auth    : { screen: AuthScreen },
@@ -29,14 +28,12 @@ export default class App extends React.Component {
                         }
                     })
                 }
-            },
-            {
+            }, {
                 navigationOptions: {
                     tabBarVisible: false,
                 },
                 lazy: true
-            }
-        );
+            });
 
         return (
             <Provider store={store}>
